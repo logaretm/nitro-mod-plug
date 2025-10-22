@@ -1,6 +1,6 @@
 {
   "name": "nitro-sentry",
-  "version": "0.0.0",
+  "version": "3.0.0",
   "private": false,
   "description": "A simple example library built by tsdown",
   "type": "module",
@@ -23,6 +23,6 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "nitropack": "^2.12.0"
+    "nitro": "^3.0.1-alpha.0"
   }
 }

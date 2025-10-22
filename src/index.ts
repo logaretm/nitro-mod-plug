@@ -1,7 +1,7 @@
-import { defineNitroModule } from "nitropack/kit";
+import type { NitroModule } from "nitro/types";
 
 // This is fine
-export const NitroSentryModule = defineNitroModule({
+export const NitroSentryModule = {
   name: 'nitro-sentry',
   setup: (nitro) => {
     console.log('Nah');
@@ -13,5 +13,5 @@ export const NitroSentryModule = defineNitroModule({
       import.meta.resolve('./plugin.js')
     );
   }
-});
+} satisfies NitroModule;
 

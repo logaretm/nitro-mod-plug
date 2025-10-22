@@ -1,5 +1,5 @@
-import { defineNitroPlugin } from "nitropack/runtime";
+declare function defineNitroPlugin(fn: () => void): void;
 
-export const NitroSentryPlugin = defineNitroPlugin(() => {
+export default defineNitroPlugin(() => {
   console.log('Nah Plugin');
 });
